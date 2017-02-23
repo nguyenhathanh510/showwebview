@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:id="@+id/next2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/submit2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/notify2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/back2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+    <TableLayout
+        android:id="@+id/select_character"
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/word"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="90dp">
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/c0"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/c1"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/c2"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/c3"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/c4"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/c5"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/c6"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/c7"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/c8"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/c9"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/box"
+                android:tag="on"
+                android:layout_margin="10px"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/word"
+        android:layout_toLeftOf="@+id/back2"
+        android:paddingLeft="50dp"
+        android:layout_marginEnd="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:paddingLeft="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/correct"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/correct"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="33dp"
+        android:id="@+id/incorrect" />
+
+    <LinearLayout
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal"
+        android:layout_marginTop="53dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
